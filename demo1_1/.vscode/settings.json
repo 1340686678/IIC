@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "leddev.h": "c",
+        "main.h": "c",
+        "stm32h7xx_hal_gpio.h": "c",
+        "keydev.h": "c",
+        "gpio.h": "c",
+        "stm32h7xx_it.h": "c"
+    }
+}

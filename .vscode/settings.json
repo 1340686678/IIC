@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "24c02dev.h": "c",
+        "main.h": "c",
+        "i2c.h": "c",
+        "usart.h": "c",
+        "gpio.h": "c",
+        "stdio.h": "c",
+        "string.h": "c",
+        "stm32h7xx_hal.h": "c"
+    }
+}
