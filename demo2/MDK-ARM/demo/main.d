@@ -39,4 +39,4 @@ demo\main.o: ../Core/Inc/usart.h
 demo\main.o: ../Core/Inc/gpio.h
 demo\main.o: E:\software\keil\keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 demo\main.o: E:\software\keil\keil_v5\ARM\ARMCC\Bin\..\include\string.h
-demo\main.o: ..\24C02Dev\24C02Dev.h
+demo\main.o: ../24C02Dev/24C02Dev.h

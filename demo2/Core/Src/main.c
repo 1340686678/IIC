@@ -54,6 +54,7 @@ uint16_t i;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+static void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -93,6 +94,9 @@ int main(void)
   MX_GPIO_Init();
   MX_LPUART1_UART_Init();
   MX_I2C1_Init();
+
+  /* Initialize interrupts */
+  MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -107,7 +111,7 @@ int main(void)
 		printf("\r\n \r\n*********STM32CubeMX I2C AT24C02 Example*********\r\n");
 	  for(i=0; i<256; i++)
 	  {
-      I2C_Buffer_Write[i]=i;    /* WriteBuffer Initialization */
+      I2C_Buffer_Write[255 - i]=i;    /* WriteBuffer Initialization */
 	  }
 
     if(AT24C02_write_Array(0, I2C_Buffer_Write, sizeof(I2C_Buffer_Write)) == HAL_OK){
@@ -116,6 +120,7 @@ int main(void)
 		else{
 			  printf("Write Failed\r\n");
 	  }
+    
 
 	  /* write data to AT24C02 */
     // for(i=0; i<256; i=i++){
@@ -201,6 +206,20 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief NVIC Configuration.
+  * @retval None
+  */
+static void MX_NVIC_Init(void)
+{
+  /* I2C1_EV_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(I2C1_EV_IRQn, 1, 0);
+  HAL_NVIC_EnableIRQ(I2C1_EV_IRQn);
+  /* I2C1_ER_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(I2C1_ER_IRQn, 2, 0);
+  HAL_NVIC_EnableIRQ(I2C1_ER_IRQn);
 }
 
 /* USER CODE BEGIN 4 */

@@ -35,3 +35,4 @@ demo\stm32h7xx_it.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 demo\stm32h7xx_it.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 demo\stm32h7xx_it.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 demo\stm32h7xx_it.o: ../Core/Inc/stm32h7xx_it.h
+demo\stm32h7xx_it.o: E:\software\keil\keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

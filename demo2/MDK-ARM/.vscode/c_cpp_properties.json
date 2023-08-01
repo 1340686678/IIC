@@ -3,17 +3,17 @@
         {
             "name": "demo",
             "includePath": [
-                "e:\\plante\\IIC\\demo1_1\\Core\\Inc",
-                "e:\\plante\\IIC\\demo1_1\\Drivers\\STM32H7xx_HAL_Driver\\Inc",
-                "e:\\plante\\IIC\\demo1_1\\Drivers\\STM32H7xx_HAL_Driver\\Inc\\Legacy",
-                "e:\\plante\\IIC\\demo1_1\\Drivers\\CMSIS\\Device\\ST\\STM32H7xx\\Include",
-                "e:\\plante\\IIC\\demo1_1\\Drivers\\CMSIS\\Include",
-                "e:\\plante\\IIC\\demo1_1\\24C02Dev",
+                "e:\\plante\\IIC\\demo2\\Core\\Inc",
+                "e:\\plante\\IIC\\demo2\\Drivers\\STM32H7xx_HAL_Driver\\Inc",
+                "e:\\plante\\IIC\\demo2\\Drivers\\STM32H7xx_HAL_Driver\\Inc\\Legacy",
+                "e:\\plante\\IIC\\demo2\\Drivers\\CMSIS\\Device\\ST\\STM32H7xx\\Include",
+                "e:\\plante\\IIC\\demo2\\Drivers\\CMSIS\\Include",
+                "e:\\plante\\IIC\\demo2\\24C02Dev",
                 "E:\\software\\keil\\keil_v5\\ARM\\ARMCC\\include",
                 "E:\\software\\keil\\keil_v5\\ARM\\ARMCC\\include\\rw",
-                "e:\\plante\\IIC\\demo1_1\\MDK-ARM",
-                "e:\\plante\\IIC\\demo1_1\\Core\\Src",
-                "e:\\plante\\IIC\\demo1_1\\Drivers\\STM32H7xx_HAL_Driver\\Src"
+                "e:\\plante\\IIC\\demo2\\MDK-ARM",
+                "e:\\plante\\IIC\\demo2\\Core\\Src",
+                "e:\\plante\\IIC\\demo2\\Drivers\\STM32H7xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
