@@ -3,9 +3,6 @@
 
 #include "stm32h7xx_hal.h"
 #include "i2c.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdint.h>
 
 #define I2C_AT24C02        hi2c1
 #define ADDR_AT24C02_WRITE 0xA0

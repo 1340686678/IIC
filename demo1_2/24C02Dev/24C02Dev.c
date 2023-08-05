@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
 HAL_StatusTypeDef AT24C02_Ready(void)
 {
