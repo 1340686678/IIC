@@ -1,6 +1,6 @@
 Dependencies for Project 'demo', Target 'demo': (DO NOT MODIFY !)
 F (startup_stm32h750xx.s)(0x64C66D31)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_demo-IE:\software\keil\keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\software\keil\keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "STM32H750xx SETA 1"--list startup_stm32h750xx.lst --xref -o demo\startup_stm32h750xx.o --depend demo\startup_stm32h750xx.d)
-F (../Core/Src/main.c)(0x64C67BE9)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\24C02Dev-I.\RTE\_demo-IE:\software\keil\keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\software\keil\keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx-o demo\main.o --omf_browse demo\main.crf --depend demo\main.d)
+F (../Core/Src/main.c)(0x64CDC28F)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\24C02Dev-I.\RTE\_demo-IE:\software\keil\keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\software\keil\keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx-o demo\main.o --omf_browse demo\main.crf --depend demo\main.d)
 I (../Core/Inc/main.h)(0x64BD0143)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64BBF3EB)
 I (../Core/Inc/stm32h7xx_hal_conf.h)(0x64C66D2E)
@@ -40,7 +40,7 @@ I (../Core/Inc/usart.h)(0x64BD030F)
 I (../Core/Inc/gpio.h)(0x64BD0141)
 I (E:\software\keil\keil_v5\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (E:\software\keil\keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
-I (..\24C02Dev\24C02Dev.h)(0x64C67711)
+I (..\24C02Dev\24C02Dev.h)(0x64CDC257)
 F (../Core/Src/gpio.c)(0x64C5D77F)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\24C02Dev-I.\RTE\_demo-IE:\software\keil\keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\software\keil\keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx-o demo\gpio.o --omf_browse demo\gpio.crf --depend demo\gpio.d)
 I (../Core/Inc/gpio.h)(0x64BD0141)
 I (../Core/Inc/main.h)(0x64BD0143)
@@ -935,8 +935,8 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x64BBF3EB)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x64BBF3EB)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64BBF3EB)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64BBF3EB)
-F (..\24C02Dev\24C02Dev.c)(0x64C67C37)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\24C02Dev-I.\RTE\_demo-IE:\software\keil\keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\software\keil\keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx-o demo\24c02dev.o --omf_browse demo\24c02dev.crf --depend demo\24c02dev.d)
-I (..\24C02Dev\24C02Dev.h)(0x64C67711)
+F (..\24C02Dev\24C02Dev.c)(0x64CDC2E3)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\24C02Dev-I.\RTE\_demo-IE:\software\keil\keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\software\keil\keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx-o demo\24c02dev.o --omf_browse demo\24c02dev.crf --depend demo\24c02dev.d)
+I (..\24C02Dev\24C02Dev.h)(0x64CDC257)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64BBF3EB)
 I (../Core/Inc/stm32h7xx_hal_conf.h)(0x64C66D2E)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64BBF3EB)

@@ -28,10 +28,34 @@ Project File Date:  07/30/2023
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\software\keil\keil_v5\ARM\ARMCC\Bin'
 Build target 'demo'
 compiling 24C02Dev.c...
-linking...
-Program Size: Code=13788 RO-data=752 RW-data=28 ZI-data=1756  
-FromELF: creating hex file...
-"demo\demo.axf" - 0 Error(s), 0 Warning(s).
+..\24C02Dev\24C02Dev.h(16): warning:  #1295-D: Deprecated declaration AT24C02_Inspect - give arg types
+  HAL_StatusTypeDef AT24C02_Inspect();
+..\24C02Dev\24C02Dev.c(51): warning:  #940-D: missing return statement at end of non-void function "AT24C02_Inspect" 
+  }
+..\24C02Dev\24C02Dev.c(34): warning:  #177-D: variable "I2C_Buffer_Read"  was declared but never referenced
+      uint8_t I2C_Buffer_Read[256];
+..\24C02Dev\24C02Dev.c: 3 warnings, 0 errors
+compiling main.c...
+..\24C02Dev\24C02Dev.h(16): warning:  #1295-D: Deprecated declaration AT24C02_Inspect - give arg types
+  HAL_StatusTypeDef AT24C02_Inspect();
+../Core/Src/main.c(105): error:  #20: identifier "i" is undefined
+  	  for(i=0; i<256; i++)
+../Core/Src/main.c(107): error:  #20: identifier "I2C_Buffer_Write" is undefined
+        I2C_Buffer_Write[i]=i;    /* WriteBuffer Initialization */
+../Core/Src/main.c(111): warning:  #223-D: function "AT24C02_write_Array" declared implicitly
+      if(AT24C02_write_Array(0, I2C_Buffer_Write, sizeof(I2C_Buffer_Write)) == HAL_OK){
+../Core/Src/main.c(111): error:  #20: identifier "I2C_Buffer_Write" is undefined
+      if(AT24C02_write_Array(0, I2C_Buffer_Write, sizeof(I2C_Buffer_Write)) == HAL_OK){
+../Core/Src/main.c(120): error:  #20: identifier "ADDR_AT24C02_Read" is undefined
+  	  HAL_I2C_Mem_Read(&hi2c1, ADDR_AT24C02_Read, 0, I2C_MEMADD_SIZE_8BIT,I2C_Buffer_Read,256, 1000);
+../Core/Src/main.c(120): error:  #20: identifier "I2C_Buffer_Read" is undefined
+  	  HAL_I2C_Mem_Read(&hi2c1, ADDR_AT24C02_Read, 0, I2C_MEMADD_SIZE_8BIT,I2C_Buffer_Read,256, 1000);
+../Core/Src/main.c(122): error:  #20: identifier "i" is undefined
+  	  for(i=0; i<256; i++)
+../Core/Src/main.c(129): error:  #20: identifier "I2C_Buffer_Write" is undefined
+  	  if(memcmp(I2C_Buffer_Read,I2C_Buffer_Write,256) == 0 ) 
+../Core/Src/main.c: 2 warnings, 7 errors
+"demo\demo.axf" - 7 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,7 +78,8 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.2
-Build Time Elapsed:  00:00:05
+Target not created.
+Build Time Elapsed:  00:00:09
 </pre>
 </body>
 </html>
