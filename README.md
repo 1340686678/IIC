@@ -12,3 +12,11 @@ https://blog.csdn.net/qq_35697978/article/details/116375880?ops_request_misc=%25
 
 # demo1_1
 在HAL库的基础上继续封装  
+
+# demo2
+ 使用I2C1 + 中断 与24C02通讯 
+
+# demo3
+ 使用I2C1 + DMA 与24C02通讯
+**注意**
+ 使用DMA时，需要开启中断，不然发送完之后会一直占着总线。 

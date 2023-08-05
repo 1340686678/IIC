@@ -112,27 +112,21 @@ int main(void)
 	  {
       I2C_Buffer_Write[i]=i;    /* WriteBuffer Initialization */
 	  }
-//	
-//    if(AT24C02_write_Array(0, I2C_Buffer_Write, sizeof(I2C_Buffer_Write)) == HAL_OK){
-//        printf("Write OK\r\n");
-//		}
-//		else{
-//			  printf("Write Failed\r\n");
-//	  }
+	
+    if(AT24C02_write_Array(0, I2C_Buffer_Write, sizeof(I2C_Buffer_Write)) == HAL_OK){
+        printf("Write OK\r\n");
+		}
+		else{
+			  printf("Write Failed\r\n");
+	  }
     
 
 	  /* write data to AT24C02 */
 	  static HAL_StatusTypeDef state;
-//		state =  HAL_I2C_Mem_Write_DMA(  &I2C_AT24C02,
-//                            ADDR_AT24C02_Write, 
-//                            0, 
-//                            I2C_MEMADD_SIZE_8BIT,
-//                            I2C_Buffer_Write,
-//                            10);
 
 	  /* read data from EEPROM */
 	  printf("\r\n Reading from AT24C02:\r\n");
-state = 		HAL_I2C_Mem_Read(&hi2c1, ADDR_AT24C02_Read, 0, I2C_MEMADD_SIZE_8BIT,I2C_Buffer_Read,256, 1000);
+		state = HAL_I2C_Mem_Read(&hi2c1, ADDR_AT24C02_Read, 0, I2C_MEMADD_SIZE_8BIT,I2C_Buffer_Read,256, 1000);
 
 	  for(i=0; i<256; i++)
 	  {

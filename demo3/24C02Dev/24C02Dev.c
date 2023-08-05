@@ -3,7 +3,7 @@
 
 HAL_StatusTypeDef AT24C02_write(uint16_t address, uint8_t data)
 {
-	printf("add:%d data:%d\r\n", address, data);
+		//printf("add:%d data:%d\r\n", address, data);
     HAL_StatusTypeDef status;
     // status =  HAL_I2C_Mem_Write(   &I2C_AT24C02, 
     //                                 ADDR_AT24C02_Write, 
@@ -13,12 +13,12 @@ HAL_StatusTypeDef AT24C02_write(uint16_t address, uint8_t data)
     //                                 1, 
     //                                 1000);
 
-    // status = HAL_I2C_Mem_Write_IT(  &I2C_AT24C02,
-    //                                 ADDR_AT24C02_Write, 
-    //                                 address, 
-    //                                 I2C_MEMADD_SIZE_8BIT,
-    //                                 &data,
-    //                                 1);
+//    status = HAL_I2C_Mem_Write_IT(  &I2C_AT24C02,
+//                                    ADDR_AT24C02_Write, 
+//                                    address, 
+//                                    I2C_MEMADD_SIZE_8BIT,
+//                                    &data,
+//                                    1);
 
     status = HAL_I2C_Mem_Write_DMA(  &I2C_AT24C02,
                                     ADDR_AT24C02_Write, 
