@@ -128,8 +128,8 @@ HAL_StatusTypeDef AT24C02_Inspect (void)
     }
 
     /* read data from EEPROM */
-    printf("\r\nReading from AT24C02:\r\n");
-    AT24C02_Read_Array(0, I2C_Buffer_Read, 256);
+//    printf("\r\nReading from AT24C02:\r\n");
+//    AT24C02_Read_Array(0, I2C_Buffer_Read, 256);
 
 //    for(i=0; i<256; i++)
 //    {
